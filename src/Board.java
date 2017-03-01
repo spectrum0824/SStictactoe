@@ -13,15 +13,13 @@ public class Board {
         		board[i][j] = "_";
         	}
         }
-
-
     }
     
     public void update(int x, int y, String sym) {
         board[x-1][y-1] = sym;
         toStringer();
-
     }
+
     public String[][] getBoard(){
     	return board;
     }
