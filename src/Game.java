@@ -73,6 +73,7 @@ public class Game {
 		String hor = "";
 		boolean over = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		for(int j=0; j<9; j++){
 			for(int i=0; i<9; i++){
 				hor = hor.concat(temp[j][i]);
@@ -111,6 +112,8 @@ public class Game {
 							}
 						}
 =======
+=======
+>>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
 
 		for(int a = 0 ; a < 2 ; a++){
 			for(int j=0; j<9; j++){
@@ -119,6 +122,9 @@ public class Game {
 						hor = hor.concat(temp[j][i]);
 					} else {
 						hor = hor.concat(temp[i][j]);
+<<<<<<< HEAD
+>>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
+=======
 >>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
 					}
 				}
