@@ -61,7 +61,7 @@ public class Game {
 						if(temp[i+2][j+2].equals(symbol)){
 							if(temp[i+3][j+3].equals(symbol)){
 								if(temp[i+4][j+4].equals(symbol)){
-									System.out.println("ture Right");
+									
 									over = true;
 								}
 							}
@@ -73,7 +73,7 @@ public class Game {
 						if(temp[i+2][j-2].equals(symbol)){
 							if(temp[i+3][j-3].equals(symbol)){
 								if(temp[i+4][j-4].equals(symbol)){
-									System.out.println("ture Left");
+							
 									over = true;
 								}
 							}
