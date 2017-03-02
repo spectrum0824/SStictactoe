@@ -2,7 +2,8 @@ import java.util.Scanner;
 public class Game {
 	
 	static Board board = new Board();
-
+	static String symbol = "";
+	
 	public static void main(String[] args){
 		int x,y,round = 1;
 		Scanner sc = new Scanner(System.in);
@@ -11,7 +12,7 @@ public class Game {
 		board.toStringer();
 		
 		while(!isOver()){
-			String symbol = "";
+			
 			System.out.println();
 			if(round%2 != 0){
 				System.out.println(player1.getName() + "'s turn");
@@ -53,10 +54,34 @@ public class Game {
 			}
 			if(hor.contains("XXXXX") || hor.contains("OOOOO")) over = true;
 		}
-	
-	
-		
-
+		for(int i = 0 ; i < 9 ; i++){
+			for(int j = 0 ; j < 9 ; j++){
+				if(temp[i][j].equals(symbol) && i < 5 && j < 5) {
+					if(temp[i+1][j+1].equals(symbol)){
+						if(temp[i+2][j+2].equals(symbol)){
+							if(temp[i+3][j+3].equals(symbol)){
+								if(temp[i+4][j+4].equals(symbol)){
+									System.out.println("ture Right");
+									over = true;
+								}
+							}
+						}
+					}
+				}
+				if(temp[i][j].equals(symbol) && i < 5 && j > 5) {
+					if(temp[i+1][j-1].equals(symbol)){
+						if(temp[i+2][j-2].equals(symbol)){
+							if(temp[i+3][j-3].equals(symbol)){
+								if(temp[i+4][j-4].equals(symbol)){
+									System.out.println("ture Left");
+									over = true;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		return over;
 	}
 	
