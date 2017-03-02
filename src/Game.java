@@ -72,48 +72,6 @@ public class Game {
 		temp = board.getBoard();
 		String hor = "";
 		boolean over = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
-		for(int j=0; j<9; j++){
-			for(int i=0; i<9; i++){
-				hor = hor.concat(temp[j][i]);
-			}
-			if(hor.contains("XXXXX") || hor.contains("OOOOO")) over = true;
-		}
-		
-		for(int j=0; j<9; j++){
-			for(int i=0; i<9; i++){
-				hor = hor.concat(temp[i][j]);
-			}
-			if(hor.contains("XXXXX") || hor.contains("OOOOO")) over = true;
-		}
-		for(int i = 0 ; i < 9 ; i++){
-			for(int j = 0 ; j < 9 ; j++){
-				if(temp[i][j].equals(symbol) && i < 5 && j < 5) {
-					if(temp[i+1][j+1].equals(symbol)){
-						if(temp[i+2][j+2].equals(symbol)){
-							if(temp[i+3][j+3].equals(symbol)){
-								if(temp[i+4][j+4].equals(symbol)){
-									
-									over = true;
-								}
-							}
-						}
-					}
-				}
-				if(temp[i][j].equals(symbol) && i < 5 && j > 5) {
-					if(temp[i+1][j-1].equals(symbol)){
-						if(temp[i+2][j-2].equals(symbol)){
-							if(temp[i+3][j-3].equals(symbol)){
-								if(temp[i+4][j-4].equals(symbol)){
-							
-									over = true;
-								}
-							}
-						}
-=======
-=======
->>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
 
 		for(int a = 0 ; a < 2 ; a++){
 			for(int j=0; j<9; j++){
@@ -122,10 +80,6 @@ public class Game {
 						hor = hor.concat(temp[j][i]);
 					} else {
 						hor = hor.concat(temp[i][j]);
-<<<<<<< HEAD
->>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
-=======
->>>>>>> 78cbe3092aae1bb03bb48452ce410ae181a6002e
 					}
 				}
 				if(hor.contains("XXXXX") || hor.contains("OOOOO")) over = true;
